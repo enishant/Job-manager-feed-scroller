@@ -8,7 +8,6 @@ Version: 1.0
 Author: Nishant Vaity
 Author URI: http://www.gravatar.com/enishant
 License: GPL2
-Git Reference : https://github.com/risq/jquery-advanced-news-ticker
 */
 
 function get_jobman_jobs()
