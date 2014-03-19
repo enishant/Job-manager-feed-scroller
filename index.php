@@ -16,7 +16,6 @@ function get_jobman_jobs()
 	$jobs_uid = uniqid('jobs_uid_');
 	global $post;
 	$posts = get_posts( 'post_type=jobman_job&numberposts=-1&post_status=publish' );
-	$jobs .= '<script src="http://risq.github.com/jquery-advanced-news-ticker/jquery.newsTicker.js"></script>';
 	$jobs .= '<div class="scroll-text">';
 	$jobs .= '<ul id="' . $jobs_uid . '">';
 	foreach ($posts as $post)
