@@ -30,6 +30,13 @@ function get_jobman_jobs()
 	$jobs .= '</script>';
 	return $jobs;
 }
+
+function jobman_jobs_scripts() 
+{
+	wp_enqueue_script( 'jobman-jobs-newsTicker', plugins_url( 'jquery.newsTicker.js' , __FILE__ ));
+}
+
 add_shortcode('showjobs','get_jobman_jobs');
 add_filter('widget_text', 'do_shortcode', 11);
+add_action( 'wp_enqueue_scripts', 'jobman_jobs_scripts' );
 ?>
